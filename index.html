@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-6</title>
+    <style>
+        .container p{
+            background-color: aqua;
+        }
+        ul>li{
+            background-color: brown;
+        }
+        h1+p{
+            background-color: blueviolet;
+        }
+        h2~span{
+            background-color: chartreuse;
+        }
+        section p,
+        section+p{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <!--1) How do you select all <p> elements that are descendants of a <div> with the class .container using CSS? -->
+           
+    <div class="container">
+        <p>This is a paragraph.</p>
+        <div>
+          <p>Another paragraph inside a nested div.</p>
+        </div>
+    </div>
+
+    <!--2) What CSS selector would you use to style only the immediate <li> child elements of an unordered list <ul>? -->
+      
+    <ul>
+        <li>First item</li>
+        <div>
+          <li>Item inside div</li>
+        </div>
+        <li>Third item</li>
+    </ul>
+
+    <!--3) How would you select a <p> element that immediately follows a <h1> element? -->
+        <h1>Heading 1</h1>
+        <p>This paragraph follows the h1 element.</p>
+        <p>This paragraph does not follow the h1 element directly.</p>
+        
+    <!--4) Write a CSS rule to target all <span> elements that are siblings (not necessarily adjacent) to an <h2> element. -->
+
+        <h2>Section Title</h2>
+        <span>First span</span>
+        <p>Some paragraph</p>
+        <span>Second span</span>
+        <span>Third span</span>
+    
+    <!--5) How would you select every <p> element that is a descendant of any <section> element, regardless of how deep the nesting is? -->
+     
+        <section>
+            <div>
+              <p>Paragraph inside a section.</p>
+            </div>
+        </section>
+          <section>
+            <p>Another paragraph in a different section.</p>
+         </section>    
+              
+  </body>
+</html>
